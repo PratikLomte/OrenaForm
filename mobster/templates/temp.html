@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="description" content="Mobile Application HTML5 Template">
+
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+
+  <title>Registration for Electronic Badge</title>
+
+  <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../static/css/maicons.css">
+
+  <link rel="stylesheet" href="../static/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../static/vendor/owl-carousel/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../statics/css/mobster.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/14353/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+
+<div class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 py-3 mb-5 mb-lg-0">
+        <div class="img-place w-lg-75 wow zoomIn">
+          <img src="../static/img/illustration_contact.svg" alt="">
+        </div>
+        <br><br>
+        <div>
+          <img src="../static/favicon.png" alt="" width="453" height="275">
+        </div>
+      </div>
+      <div class="col-lg-5 py-3">
+        <h1 class="wow fadeInUp">Register Today for Electronic Badge!!</h1>
+<br>
+
+	<form action="ty.html" method="POST" id="myForm">
+		<div class="form-group wow fadeInUp">
+			<label>Enter Name<span style="color:red">*</span></label>
+			<input required="text" name="name" class="form-control" id="name" placeholder="Full name"/>
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Enter Email Id<span style="color:red">*</span></label>
+			<input required="text" name="email" type="email" class="form-control" id="email" placeholder="Eg: example@website.com" />
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Enter Phone Number<span style="color:red">*</span></label>
+			<input required="number" type="number" name="phone" class="form-control" id="email" placeholder="Only digits"/>
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Enter Organization - College\University</label>
+			<input name="college" class="form-control" id="email" placeholder="College\University" />
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Enter Organization Details</label>
+			<input name="orgdetails" class="form-control" id="email" placeholder="Organization Details" />
+		</div>
+
+		<div class="form-group wow fadeInUp">
+		  <label for="Registering for">Registering for event<span style="color:red">*</span></label><br>
+		    <input required="text" name="event" class="form-control" id="email" placeholder="Event name" />
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Any Comments</label>
+			<input type="text" name="comments" class="form-control" id="email" placeholder="Comments/Suggestions"/>
+		</div>
+
+          <div class="form-group mt-4 wow fadeInUp">
+            <button onclick="SubForm" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+	</form>
+</body>
+</html>

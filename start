@@ -1,0 +1,11 @@
+#Server Start Commands
+
+Mobster\Scripts\activate
+
+set FLASK_ENV=development
+
+set FLASK_APP=server.py
+python -m flask run
+
+URL :https://pratiklomte.github.io/test/
+Code: https://github.com/PratikLomte/test

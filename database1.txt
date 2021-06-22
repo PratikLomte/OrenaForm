@@ -1,0 +1,75 @@
+name, email, college, branch, year, roll
+
+james, k, starksdaw, l, 2020, 2021 
+
+
+james,  starksdaw, k, l, 2020, 2021 
+
+
+james,  starksdaw, k, l, 2020, 2021 
+
+
+james, starksdaw, k, l, 2020, 2021 
+
+
+james, starksdaw, k, l, 2020, 2021 
+
+
+james, starksdaw, k, l, 2020, 2021 
+
+
+james, starksdaw, k, l, 2020, 2021 
+
+
+james, gmail, fc, cs, 2nd, 2021 
+
+
+james, gmail, fc, cs, 2nd, 2021 
+
+
+james, gmail, fc, cs, 2nd, 2021 
+
+
+, s, k, l, 2020, s 
+
+
+, s, k, l, 2020, s 
+
+
+james, s, kkkk, l, j, s 
+
+
+james, starksdaw, k, l, 2020, a 
+
+
+james, starksdaw, k, l, 2020, a 
+
+
+james, starksdaw, k, l, s, a 
+
+
+james, starksdaw, k, l, , 22 
+
+
+james, s, k, l, , 22 
+
+
+james, s, k, l, , 22 
+
+
+james, s, k, l, , 22 
+
+
+james, starksdaw@adw, k, l, 2020, 2021 
+
+
+james, starksdaw@adw, k, 30, Event 1, w, sdaw 
+
+
+James, stark@gmail.com, KCET, 30, Event 1, w, No 
+
+
+James, stark@gmail.com, KCET, 30, Event 1, w, No 
+
+
+James, starks@gmail, KCET, 303, Event 3, ,  
