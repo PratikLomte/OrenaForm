@@ -23,6 +23,10 @@ def try2():
 def new():
     return render_template('new.html')
 
+@app.route('/form2.html')
+def form2():
+    return render_template('form2.html')
+
 def write_to_file(data):
     with open('database1.txt', mode = 'a') as database:
         name = data['name']
