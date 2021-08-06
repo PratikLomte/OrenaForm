@@ -10,7 +10,7 @@
 
   <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
 
-  <title>Event Registration</title>
+  <title>Registration for Sponsor</title>
 
   <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
 
@@ -62,66 +62,63 @@
         </div>
       </div>
       <div class="col-lg-5 py-3">
-        <h1 class="wow fadeInUp">Register Your Events Here!!</h1>
+        <h1 class="wow fadeInUp">Register as Sponsor Today!!</h1>
 <br>
 
-	<form action="ty1.html">
+	<form action="ty.html" method="POST" id="myForm">
 
 		<div class="form-group wow fadeInUp">
-			<label>Enter Your Unique Identification Code<span style="color:red">*</span><br><i>To recieve this number you need to first register as an Exhibitor and the Unique Identification Code will be mailed to you</i><label>
-			<input required="text" name="Event Name" class="form-control" id="name" placeholder="Unique Id"/>
+			<label>Enter Name<span style="color:red">*</span></label>
+			<input required="text" name="name" class="form-control" id="name" placeholder="Full name"/>
 		</div>
 
 		<div class="form-group wow fadeInUp">
-			<label>Enter Event Name<span style="color:red">*</span></label>
-			<input required="text" name="Event Name" class="form-control" id="name" placeholder="Full name"/>
+			<label>Enter Organisation/Company Name</label>
+			<input name="college" class="form-control" id="email" placeholder="Organization/Company Name" />
 		</div>
 
-		<!--<div class="form-group wow fadeInUp">
-			<label>Enter Event No.<span style="color:red">*</span></label>
-			<input required="number" type="number" name="Event no." class="form-control" id="email" placeholder="Only digits"/>
-		</div>
-
-		<div class="form-group wow fadeInUp">
-			<label>Enter Start Date</label><span style="color:red">*</span></label>
-			<input name="Start Date" type="date" class="form-control" id="email" placeholder= "Event start date" required/>
-		</div>
-
-		<div class="form-group wow fadeInUp">
-			<label>Enter End Date</label><span style="color:red">*</span></label>
-			<input name="End Date" type="date" class="form-control" id="email" placeholder= "Event end date" required/>
-		</div>
-
-		<div class="form-group wow fadeInUp">
-			<label>Enter Start Time (Optional)</label>
-			<input name="Start Time" type="time" class="form-control" id="email" placeholder= "Event start time"/>
-		</div>
-
-		<div class="form-group wow fadeInUp">
-			<label>Enter End Time (Optional)</label>
-			<input name="End Time" type="time" class="form-control" id="email" placeholder= "Event end time"/>
+		<!-- <div class="form-group wow fadeInUp">
+			<label>Enter Your Address<span style="color:red">*</span></label>
+			<input required="text" name="name" class="form-control" id="name" placeholder="Address"/>
 		</div> -->
 
+
 		<div class="form-group wow fadeInUp">
-			<label>Enter Organizer Name</label>
-			<input name="Organizer Name" class="form-control" id="name" placeholder="Organizer name"/>
+			<label>Enter Email Id<span style="color:red">*</span></label>
+			<input required="text" name="email" type="email" class="form-control" id="email" placeholder="Eg: example@website.com" />
 		</div>
 
 		<div class="form-group wow fadeInUp">
-			<label>Enter Organization Details</label>
-			<input name="orgdetails" class="form-control" id="email" placeholder="Organization Details (Optional)" />
+			<label>Enter Phone Number<span style="color:red">*</span></label>
+			<input required="number" type="number" name="phone" class="form-control" id="email" placeholder="Only digits"/>
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Organization Details</label>
+			<input name="orgdetails" class="form-control" id="email" placeholder="About Organization" />
 		</div>
 
 		<div class="form-group wow fadeInUp"> 
-		  <label for="img">Upload Brochure (recommended) </label>
-		  <input type="file">
+		  <label for="img">Upload Your Photo (Same will be printed on badge)<span style="color:red">*</span></label>
+		  <input type="file" required />
     </div>
 
+		<div class="form-group wow fadeInUp"> 
+		  <label for="pf1d">Upload ID Proof (Eg: Aadhar Card, Pan Card, Passport etc)<span style="color:red">*</span></label>
+		  <input type="file" required />
+    </div>
 
 		<div class="form-group wow fadeInUp">
-			<label>Any Comments</label>
+			<label>Enter Sponsorship Amount<span style="color:red">*</span></label>
+			<input required="text" name="name" class="form-control" id="name" placeholder="Sponsorship Amount in Rupees (₹)"/>
+		</div>
+
+		<div class="form-group wow fadeInUp">
+			<label>Any Suggestions</label>
 			<input type="text" name="comments" class="form-control" id="email" placeholder="Comments/Suggestions"/>
 		</div>
+
+<p><i>We want to thank you for your generosity and we appreciate your contribution!</i></p>
 
           <div class="form-group mt-4 wow fadeInUp">
             <button onclick="SubForm" type="submit" class="btn btn-primary">Submit</button>

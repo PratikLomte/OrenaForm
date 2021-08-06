@@ -5,27 +5,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('form1.html')
 
-@app.route('/temp.html')
-def temp():
-    return render_template('temp.html')
+# @app.route('/form1.html')
+# def temp():
+#     return render_template('form1.html')
 
-@app.route('/try.html')
-def try1():
-    return render_template('try.html')
+# @app.route('/form2.html')
+# def form2():
+#     return render_template('form2.html')
 
-@app.route('/try.html')
-def try2():
-    return render_template('try.html')
+# @app.route('/form3.html')
+# def form3():
+#     return render_template('form3.html')
 
-@app.route('/new.html')
-def new():
-    return render_template('new.html')
+@app.route('/<page_name>')
+def auto_html_page(page_name):
+    return render_template(page_name)
 
-@app.route('/form2.html')
-def form2():
-    return render_template('form2.html')
 
 def write_to_file(data):
     with open('database1.txt', mode = 'a') as database:
@@ -62,11 +59,3 @@ def submit():
         return render_template('ty.html')
     else:
         return "Error 404"
-
-@app.route('/ty1.html')
-def submit1():
-        return render_template('ty.html')
-
-
-
-
